@@ -1,0 +1,292 @@
+* {
+  box-sizing: border-box;
+}
+
+.clause-page {
+  min-height: 100vh;
+  display: flex;
+  background: #f5f7fb;
+  font-family: Arial, sans-serif;
+}
+
+.clause-content {
+  flex: 1;
+  padding: 30px 40px;
+  background: #f5f7fb;
+}
+
+.clause-content h1 {
+  margin: 0 0 30px;
+  font-size: 30px;
+  color: #172033;
+}
+
+/* Clauses Section */
+
+.clause-list-section {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.clause-list-section h2 {
+  margin: 0 0 20px;
+  color: #172033;
+  font-size: 20px;
+}
+
+/* Small Cards */
+
+.clause-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+.clause-card {
+  background: #f8f9fb;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #e1e5eb;
+}
+
+.clause-card:hover {
+  border-color: #c7d0dc;
+}
+
+/* Card Header */
+
+.clause-header {
+  margin-bottom: 10px;
+}
+
+.clause-card h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #334e68;
+}
+
+/* Card Details */
+
+.clause-card p {
+  margin: 6px 0;
+  color: #687386;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.clause-card strong {
+  color: #172033;
+}
+
+/* Clause Content */
+
+.clause-card p:last-child {
+  margin-top: 10px;
+}
+
+/* Loading / Empty Message */
+
+.clause-list-section > p {
+  margin: 0;
+  padding: 15px;
+  background: #f8f9fb;
+  border-radius: 8px;
+  color: #687386;
+  font-size: 14px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .clause-content {
+    padding: 20px;
+  }
+
+  .clause-list {
+    grid-template-columns: 1fr;
+  }
+}
+.clause-actions {
+  display: flex;
+  margin-top: 15px;
+}
+
+.delete-clause-btn {
+  border: none;
+  background: #8b3a3a;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.delete-clause-btn:hover {
+  background: #702f2f;
+}
+
+.delete-clause-btn:disabled {
+  background: #aeb7c8;
+  cursor: not-allowed;
+}
+ /* =========================
+    PAGE HEADER
+ ========================= */
+
+ .clause-page-header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 25px;
+ }
+
+ .clause-page-header h1 {
+   margin: 0;
+ }
+
+
+ /* =========================
+    CREATE CLAUSE BUTTON
+ ========================= */
+
+ .create-contract-btn {
+   border: none;
+   background: #334e68;
+   color: white;
+   padding: 10px 18px;
+   border-radius: 6px;
+   font-size: 14px;
+   font-weight: 500;
+   cursor: pointer;
+   transition: background 0.2s ease;
+ }
+
+ .create-contract-btn:hover {
+   background: #263e54;
+ }
+
+
+ /* =========================
+    CREATE CLAUSE SECTION
+ ========================= */
+
+ .create-clause-section {
+   background: white;
+   padding: 25px;
+   border-radius: 12px;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+   margin-bottom: 25px;
+ }
+
+ .create-clause-section h2 {
+   margin: 0 0 20px;
+   color: #172033;
+   font-size: 20px;
+ }
+
+
+ /* =========================
+    CREATE CLAUSE FORM
+ ========================= */
+
+ .create-clause-form {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+ }
+
+ .form-group {
+   display: flex;
+   flex-direction: column;
+   gap: 7px;
+ }
+
+ .form-group label {
+   font-size: 13px;
+   font-weight: 600;
+   color: #172033;
+ }
+
+ .form-group input,
+ .form-group select,
+ .form-group textarea {
+   width: 100%;
+   padding: 10px 12px;
+   border: 1px solid #d7dde5;
+   border-radius: 6px;
+   font-size: 14px;
+   font-family: Arial, sans-serif;
+   color: #172033;
+   background: white;
+   outline: none;
+ }
+
+ .form-group input:focus,
+ .form-group select:focus,
+ .form-group textarea:focus {
+   border-color: #334e68;
+ }
+
+ .form-group textarea {
+   resize: vertical;
+ }
+
+
+ /* =========================
+    SAVE CLAUSE BUTTON
+ ========================= */
+
+ .save-clause-btn {
+   align-self: flex-start;
+   border: none;
+   background: #334e68;
+   color: white;
+   padding: 10px 18px;
+   border-radius: 6px;
+   font-size: 14px;
+   font-weight: 500;
+   cursor: pointer;
+   transition: background 0.2s ease;
+ }
+
+ .save-clause-btn:hover {
+   background: #263e54;
+ }
+
+
+ /* =========================
+    RESPONSIVE
+ ========================= */
+
+ @media (max-width: 768px) {
+
+   .clause-page-header {
+     align-items: flex-start;
+     gap: 15px;
+     flex-direction: column;
+   }
+
+   .create-contract-btn {
+     width: 100%;
+   }
+
+   .create-clause-section {
+     padding: 20px;
+   }
+ }
+.move-clause-btn {
+  border: none;
+  background: #334e68;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.move-clause-btn:hover {
+  background: #263e54;
+}

@@ -1,0 +1,391 @@
+
+.approvals-layout {
+  min-height: 100vh;
+  display: flex;
+  background: #f5f7fb;
+  font-family: Arial, sans-serif;
+}
+
+.approvals-page {
+  flex: 1;
+  min-width: 0;
+  padding: 30px 40px;
+}
+
+.approvals-header {
+  margin-bottom: 25px;
+}
+
+.approvals-header h1 {
+  margin: 0;
+  color: #172033;
+  font-size: 30px;
+}
+
+.approvals-header p {
+  color: #687386;
+  margin-top: 7px;
+}
+
+.approvals-table-container {
+  background: white;
+  border-radius: 12px;
+  overflow-x: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.approvals-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.approvals-table th,
+.approvals-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.approvals-table th {
+  background: #f8f9fb;
+  color: #4b5565;
+  font-size: 13px;
+}
+
+.approvals-table td {
+  color: #374151;
+  font-size: 14px;
+}
+
+.approvals-table small {
+  color: #687386;
+}
+
+.approval-status {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.status-pending {
+  background: #fff4cc;
+  color: #8a6500;
+}
+
+.status-approved {
+  background: #e5f7ed;
+  color: #167344;
+}
+
+.status-rejected {
+  background: #fdeaea;
+  color: #b42318;
+}
+
+.approval-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.approve-btn,
+.reject-btn {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.approve-btn {
+  background: #167344;
+  color: white;
+}
+
+.approve-btn:hover {
+  background: #125c36;
+}
+
+.reject-btn {
+  background: #b42318;
+  color: white;
+}
+
+.reject-btn:hover {
+  background: #8f1d15;
+}
+
+.reviewed-text {
+  color: #687386;
+  font-size: 13px;
+}
+
+.empty-approvals {
+  background: white;
+  padding: 50px;
+  text-align: center;
+  border-radius: 12px;
+  color: #687386;
+}
+
+.approvals-loading,
+.approvals-error {
+  padding: 50px;
+  text-align: center;
+}
+/* ================================
+   Pending Modification Details
+   ================================ */
+
+.approval-details-section {
+    margin-top: 30px;
+}
+
+.approval-details-section h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+/* Individual request card */
+.approval-detail-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    margin-bottom: 24px;
+    padding: 24px;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+    transition: all 0.2s ease;
+}
+
+.approval-detail-card:hover {
+    box-shadow: 0 7px 20px rgba(15, 23, 42, 0.10);
+    transform: translateY(-1px);
+}
+
+/* Request heading */
+.approval-detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 22px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.approval-detail-header h3 {
+    margin: 0;
+    font-size: 19px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.approval-detail-header p {
+    margin: 6px 0 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* Status badge */
+.approval-detail-header .status-badge {
+    background: #fff7ed;
+    color: #c2410c;
+    border: 1px solid #fed7aa;
+    padding: 6px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+
+/* Comparison section */
+.approval-comparison {
+    display: grid;
+    grid-template-columns: 1fr 55px 1fr;
+    align-items: stretch;
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.approval-value {
+    padding: 18px;
+    border-radius: 10px;
+    min-height: 130px;
+}
+
+.approval-value h4 {
+    margin: 0 0 12px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.approval-value p {
+    margin: 0;
+    line-height: 1.7;
+    font-size: 14px;
+    color: #334155;
+}
+
+/* Original */
+.original-value {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+}
+
+.original-value h4 {
+    color: #475569;
+}
+
+/* Proposed */
+.proposed-value {
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+}
+
+.proposed-value h4 {
+    color: #2563eb;
+}
+
+/* Arrow */
+.approval-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+/* Reason */
+.approval-reason {
+    margin-top: 20px;
+    padding: 16px 18px;
+    background: #f8fafc;
+    border-left: 4px solid #6366f1;
+    border-radius: 8px;
+}
+
+.approval-reason strong {
+    display: block;
+    margin-bottom: 7px;
+    color: #334155;
+    font-size: 14px;
+}
+
+.approval-reason p {
+    margin: 0;
+    color: #475569;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Metadata */
+.approval-meta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.approval-meta div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.approval-meta strong {
+    color: #64748b;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.approval-meta span {
+    color: #1e293b;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Action buttons */
+.approval-detail-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.approval-detail-actions button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.approval-detail-actions .approve-btn {
+    background: #16a34a;
+    color: white;
+}
+
+.approval-detail-actions .approve-btn:hover {
+    background: #15803d;
+}
+
+.approval-detail-actions .reject-btn {
+    background: #dc2626;
+    color: white;
+}
+
+.approval-detail-actions .reject-btn:hover {
+    background: #b91c1c;
+}
+
+
+/* ================================
+   Responsive
+   ================================ */
+
+@media (max-width: 900px) {
+    .approval-comparison {
+        grid-template-columns: 1fr;
+    }
+
+    .approval-arrow {
+        transform: rotate(90deg);
+        padding: 5px;
+    }
+
+    .approval-meta {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .approval-detail-card {
+        padding: 17px;
+    }
+
+    .approval-detail-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .approval-detail-actions {
+        justify-content: stretch;
+        flex-direction: column;
+    }
+
+    .approval-detail-actions button {
+        width: 100%;
+    }
+}

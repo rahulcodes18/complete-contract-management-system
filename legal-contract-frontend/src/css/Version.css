@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  }
+
+.version-page {
+min-height: 100vh;
+display: flex;
+background: #f5f7fb;
+font-family: Arial, sans-serif;
+}
+
+.version-content {
+flex: 1;
+padding: 30px 40px;
+background: #f5f7fb;
+}
+
+.version-content h1 {
+margin: 0 0 30px;
+font-size: 30px;
+color: #172033;
+}
+
+/* Versions Section */
+
+.version-list-section {
+background: white;
+padding: 25px;
+border-radius: 12px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.version-list-section h2 {
+margin: 0 0 20px;
+color: #172033;
+font-size: 20px;
+}
+
+/* Small Cards */
+
+.version-list {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 15px;
+}
+
+.version-card {
+background: #f8f9fb;
+padding: 15px;
+border-radius: 8px;
+border: 1px solid #e1e5eb;
+}
+
+.version-card:hover {
+border-color: #c7d0dc;
+}
+
+/* Card Header */
+
+.version-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 10px;
+margin-bottom: 10px;
+}
+
+.version-card h3 {
+margin: 0;
+font-size: 16px;
+color: #334e68;
+}
+
+/* Status */
+
+.version-status {
+padding: 4px 8px;
+border-radius: 5px;
+background: #eef2f7;
+color: #334e68;
+font-size: 11px;
+font-weight: bold;
+white-space: nowrap;
+}
+
+/* Card Details */
+
+.version-card p {
+margin: 6px 0;
+color: #687386;
+font-size: 13px;
+line-height: 1.4;
+}
+
+.version-card strong {
+color: #172033;
+}
+
+/* Empty / Loading Message */
+
+.version-list-section > p {
+margin: 0;
+padding: 15px;
+background: #f8f9fb;
+border-radius: 8px;
+color: #687386;
+font-size: 14px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+.version-content {
+padding: 20px;
+}
+
+.version-list {
+grid-template-columns: 1fr;
+}
+
+.version-header {
+align-items: flex-start;
+}
+}

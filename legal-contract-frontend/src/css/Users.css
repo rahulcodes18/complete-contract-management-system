@@ -1,0 +1,133 @@
+.users-page-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.users-page {
+  flex: 1;
+  padding: 30px;
+  background: #f5f7fb;
+}
+
+.users-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.users-page-header h1 {
+  margin: 0;
+  color: #172033;
+  font-size: 28px;
+}
+
+.users-page-header p {
+  margin-top: 7px;
+  color: #687386;
+}
+
+.users-count {
+  background: #e8f1ff;
+  color: #2563eb;
+  padding: 9px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.users-table-container {
+  background: white;
+  border-radius: 14px;
+  overflow-x: auto;
+  border: 1px solid #e7ebf0;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users-table thead {
+  background: #f5f7fb;
+}
+
+.users-table th {
+  padding: 16px;
+  text-align: left;
+  font-size: 13px;
+  color: #596579;
+  border-bottom: 1px solid #e7ebf0;
+}
+
+.users-table td {
+  padding: 16px;
+  font-size: 14px;
+  color: #344054;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.users-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.users-table tbody tr:hover {
+  background: #f8faff;
+}
+
+.users-table td strong {
+  color: #172033;
+}
+
+.user-role,
+.user-status {
+  display: inline-block;
+  padding: 6px 11px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.role-admin {
+  background: #eee8ff;
+  color: #6941c6;
+}
+
+.role-legal_user {
+  background: #e8f1ff;
+  color: #2563eb;
+}
+
+.role-reviewer {
+  background: #fff4e5;
+  color: #b54708;
+}
+
+.user-status.active {
+  background: #e7f8ef;
+  color: #16834b;
+}
+
+.user-status.inactive {
+  background: #fdecec;
+  color: #d92d20;
+}
+
+.empty-users {
+  text-align: center;
+  padding: 40px !important;
+  color: #98a2b3 !important;
+}
+
+.users-loading,
+.users-error {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.users-error {
+  color: #d92d20;
+}
